@@ -5,7 +5,7 @@ const cors = require('cors');
 
 require('dotenv').config();
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 app = express();
 
 app.use(cors());
