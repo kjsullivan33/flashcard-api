@@ -5,7 +5,7 @@ const cors = require('cors');
 
 require('dotenv').config();
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 4000;
 app = express();
 
 app.use(cors());
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 const cards = require('./routes/flashcard');
-app.use('/cards', cards);
+app.use('/', cards);
 
 app.listen(port, () => {
   console.log('Server is up and running on port number ' + port);
