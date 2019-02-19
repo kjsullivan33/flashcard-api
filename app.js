@@ -1,14 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const cors = require('cors');
+// const cors = require('cors');
 
 require('dotenv').config();
 
 const port = process.env.PORT || 4000;
 app = express();
 
-app.use(cors());
+// app.use(cors());
 
 const mongodb = process.env.MONGOLAB_URI;
 
